@@ -15,7 +15,11 @@ repositories {
 }
 
 dependencies {
+    implementation(group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version = "1.6.2")
+    implementation(group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-reactor", version = "1.6.2")
     implementation(group = "org.springframework.boot", name = "spring-boot-starter-webflux", version = "2.7.0")
+    implementation(group = "com.fasterxml.jackson.module", name = "jackson-module-kotlin", version = "2.13.3")
+    implementation(group = "com.auth0", name = "java-jwt", version = "3.19.2")
 
     testImplementation(kotlin("test"))
 }
